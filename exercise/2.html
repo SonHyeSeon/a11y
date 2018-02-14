@@ -54,6 +54,8 @@ button {
 <button type="button" onclick="document.body.style.backgroundColor = 'green'">GREEN</button>
 <button type="button" onclick="document.body.style.backgroundColor = 'grey'">GREY</button>
 
+  <div role="button" id="button" tabIndex="0" onkeydown="onClick(event)">PRESS ME!</div>
+  
 <script>
 function onClick(event) {
   if (event.type == 'keydown' && event.key == 'Enter') {
@@ -63,7 +65,7 @@ function onClick(event) {
 }
 </script>
 
-<div role="button" id="button" tabIndex="0" onkeydown="onClick(event)">PRESS ME!</div>
+
 
 </body>
 </html>
